@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultora Sasha García Dipas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <h1>Consultora Sasha García Dipas</h1>
+    <h2>Catálogos:</h2>
+    <div class="catalog-buttons">
+      <button onclick="cargarCatalogo('esika.pdf')">ésika</button>
+      <button onclick="cargarCatalogo('lebel.pdf')">l'ebel</button>
+      <button onclick="cargarCatalogo('cyzone.pdf')">cyzone</button>
+      <button onclick="cargarCatalogo('yanbal.pdf')">yanbal</button>
+    </div>
+    <p class="seleccion-msg">Seleccione el de su preferencia</p>
+
+    <div class="catalogo-container">
+      <iframe id="visorPDF" src="" frameborder="0"></iframe>
+    </div>
+
+    <div class="acciones">
+      <button onclick="capturarVista()">Agregar a Bolsa 👜</button>
+      <button onclick="mostrarBolsa()">Ver Bolsa</button>
+    </div>
+
+    <div id="bolsaProductos" class="modal">
+      <div class="modal-content">
+        <span class="cerrar" onclick="cerrarBolsa()">&times;</span>
+        <h3>Bolsa de productos</h3>
+        <div id="contenedorCapturas"></div>
+       
+      </div>
+    </div>
+
+    <div class="whatsapp">
+      <a href="https://wa.me/51982790343" target="_blank">Escríbeme por WhatsApp</a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
