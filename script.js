@@ -1,8 +1,8 @@
 let capturas = [];
 
 function cargarCatalogo(nombreArchivo) {
-  const iframe = document.getElementById("visorPDF");
-  iframe.src = `./archivos/${nombreArchivo}#toolbar=0`;
+  const visor = document.getElementById("visorPDF");
+  visor.src = `https://mozilla.github.io/pdf.js/web/viewer.html?file=./archivos/${nombreArchivo}`;
 }
 
 function capturarVista() {
@@ -62,11 +62,11 @@ function enviarPorWhatsapp() {
     return;
   }
   let mensaje = "Hola, deseo consultar por estos productos del catálogo:%0A";
-  capturas.forEach((item, i) => {
+  capturas.forEach((item) => {
     mensaje += `◍ ${item}%0A`;
   });
-  let link = `https://wa.me/51982790343?text=${mensaje}`;
-  window.open(link, "_blank");
+  const url = `https://wa.me/51982790343?text=${mensaje}`;
+  window.open(url, "_blank");
 }
 
 function actualizarContadorBolsa() {
