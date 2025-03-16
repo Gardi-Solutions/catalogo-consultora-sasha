@@ -1,79 +1,105 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #e0e0e0;
-  background: linear-gradient(to right, #dcdcdc, #f4f4f4);
-  overflow-x: hidden;
-}
-
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-
-h1, h2 {
-  text-align: center;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
   color: #333;
-  font-weight: 700;
-  animation: fadeIn 1s ease-in-out;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin: 30px 0;
-  animation: fadeInUp 1s ease-in-out;
-}
-
-button {
-  background-color: #c2185b;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-button:hover {
-  background-color: #ad1457;
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-.viewer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 70vh;
+.main-container {
+  text-align: center;
   padding: 20px;
-  animation: fadeIn 1s ease-in-out;
 }
 
-canvas, .pdf-viewer {
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.catalog-buttons button, .acciones button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #d33c79;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+.catalog-buttons button:hover, .acciones button:hover {
+  background-color: #a7295a;
 }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.catalogo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.catalogo-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp {
+  margin-top: 30px;
+}
+
+.whatsapp a {
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.cerrar {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#contenedorCapturas img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  display: block;
+}
+
+.itemCaptura {
+  margin-bottom: 10px;
+}
+
+.itemCaptura button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #d33c79;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
