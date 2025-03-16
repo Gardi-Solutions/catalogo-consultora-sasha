@@ -2,61 +2,29 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9fb;
+  background-color: #fff0f5;
   color: #333;
 }
 
 .main-container {
   text-align: center;
-  padding: 30px 20px;
-  max-width: 1200px;
-  margin: auto;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 2.5em;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 1.6em;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.catalog-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.catalog-buttons button,
-.acciones button {
-  padding: 12px 25px;
-  background: linear-gradient(135deg, #d33c79, #e46ca3);
+.catalog-buttons button, .acciones button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #d33c79;
   border: none;
   color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: background 0.3s;
 }
 
-.catalog-buttons button:hover,
-.acciones button:hover {
-  background: linear-gradient(135deg, #b12d60, #c4538e);
-  transform: translateY(-2px);
-}
-
-.seleccion-msg {
-  font-style: italic;
-  color: #777;
-  margin-bottom: 20px;
+.catalog-buttons button:hover, .acciones button:hover {
+  background-color: #a7295a;
 }
 
 .catalogo-container {
@@ -68,40 +36,23 @@ h2 {
 
 .catalogo-container iframe {
   width: 100%;
-  max-width: 850px;
+  max-width: 800px;
   height: 80vh;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  border: none;
-}
-
-.acciones {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .whatsapp {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .whatsapp a {
   background: #25D366;
   color: white;
-  padding: 12px 25px;
-  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
-  display: inline-block;
-  transition: background 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.whatsapp a:hover {
-  background: #1ebd59;
 }
 
 .modal {
@@ -109,57 +60,46 @@ h2 {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0,0,0,0.6);
   z-index: 999;
 }
 
 .modal-content {
-  background-color: #fff;
-  margin: 6% auto;
-  padding: 30px;
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
   width: 90%;
-  max-width: 650px;
+  max-width: 600px;
   border-radius: 12px;
   max-height: 80vh;
   overflow-y: auto;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 .cerrar {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 28px;
-  font-weight: bold;
+  float: right;
+  font-size: 24px;
   cursor: pointer;
-  color: #d33c79;
 }
 
 #contenedorCapturas img {
   max-width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
   display: block;
 }
 
 .itemCaptura {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .itemCaptura button {
   margin-top: 5px;
-  padding: 8px 16px;
+  padding: 5px 10px;
   background-color: #d33c79;
   border: none;
   color: white;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
-  transition: background 0.3s ease;
-}
-
-.itemCaptura button:hover {
-  background-color: #b12d60;
 }
